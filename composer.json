@@ -21,7 +21,6 @@
 		"latte/latte": "^2.9",
 		"tracy/tracy": "^2.8",
 		"ublaboo/datagrid": "^6.9",
-		"ublaboo/datagrid-nette-database-data-source": "^2.1",
 		"contributte/menu-control": "^3.0",
 		"dibi/dibi": "^4.2"
 	},
