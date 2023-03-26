@@ -1,0 +1,46 @@
+parameters:
+
+database:
+	dsn: 'mysql:host=127.0.0.1;port=3306;dbname=sportisimo-dev'
+	user: 'root'
+	password:
+	options:
+	    lazy: yes
+
+application:
+	errorPresenter: Error
+	mapping:
+		*: App\*Module\Presenters\*Presenter
+
+
+session:
+	expiration: 14 days
+
+
+di:
+	export:
+		parameters: no
+		tags: no
+
+
+extensions:
+	menu: Contributte\MenuControl\DI\MenuExtension
+    dibi: Dibi\Bridges\Nette\DibiExtension22
+
+
+dibi:
+	host: 127.0.0.1
+	username: root
+	password: root
+	database: sportisimo-dev
+	port: 3306
+
+
+menu:
+	default:
+		items:
+			Homepage:
+				action: Trademark:default
+				items:
+				    Trademarks:
+				        action: Homepage:default
