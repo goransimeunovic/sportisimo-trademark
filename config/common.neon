@@ -40,7 +40,7 @@ menu:
 	default:
 		items:
 			Homepage:
-				action: Trademark:default
+				action: Homepage:default
 				items:
 				    Trademarks:
-				        action: Homepage:default
+				        action: Trademark:default
